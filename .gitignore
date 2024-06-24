@@ -1,1 +1,2 @@
-.gitignore-test
+# gitignore-test/ 폴더 안에 모든 걸 커밋 금지
+gitignore-test/ 
