@@ -238,7 +238,7 @@ header nav ul li a:hover {
   height: 100%;
   background-attachment: fixed;
   background-image: url("/06_portfolio-site/images/banner-img.jpg");
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -394,7 +394,7 @@ header nav ul li a:hover {
   transform: translateX(0);
 }
 
-.contact .contact__sns {
+/* .contact .contact__sns {
   margin-top: 20px;
 }
 .contact .contact__sns ul {
@@ -402,7 +402,6 @@ header nav ul li a:hover {
   justify-content: center;
   column-gap: 10px;
 }
-/* 애니메이션 효과 추가 */
 .contact .contact__sns ul li {
   opacity: 0;
   transform: translateY(100px);
@@ -420,7 +419,7 @@ header nav ul li a:hover {
 }
 .contact .contact__sns ul li img {
   width: 30px;
-}
+} */
 
 /* FOOTER */
 footer .copyright {
