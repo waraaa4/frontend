@@ -74,12 +74,16 @@ window.addEventListener('scroll', function () {
 
 
 // 섹션3 슬라이드
-var swiper3 = new Swiper(".work-swiper", {
+var swiper = new Swiper(".work-swiper", {
   spaceBetween: 10,
   slidesPerView: 1.4,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
+  navigation: {
+    nextEl: ".slide-next",
+    prevEl: ".slide-prev",
   },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
 });
 // end
