@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>훈련생이름 포트폴리오</title>
 
+  <!-- aos 플러그인 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- 파비콘 적용 -->
   <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용
     최상위 경로에 없거나, ico가 아닌 별도 파일을 가진 경우에는 <link>로 적용
@@ -39,13 +43,13 @@
   <!-- 폰트 테스트 -->
   <!-- <span>헬로 월드!</span>
   <span class="font-en">Hello world!</span> -->
-
+ <!--  -->
   <!-- HEADER -->
   <header>
     <div class="inner">
       <!-- 로고 -->
       <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="로고">
+        <p>CJH</p>
       </a>
 
       <!-- 메뉴 -->
@@ -64,15 +68,22 @@
   <!-- VISUAL -->
   <!-- 배경 비디오 적용(또는 슬라이드로 만들고 싶으면 swiper 참고) -->
   <section class="visual">
+    <div class="vod-box">
+      <div class="vod-bg"></div>
+      <div class="vod-title">
+        <h1 data-aos="fade-left" data-aos-duration="1500">CJH</h1>
+        <h2 data-aos="fade-right" data-aos-duration="1500">PORTFOLIO</h2>
+      </div>
+    </div>
     <video autoplay muted loop>
-      <source src="videos/movie2.mp4" type="video/mp4">
+      <source src="videos/main_vod2.mp4" type="video/mp4">
     </video>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="about">
     <div class="inner">
-      <h2 class="title font-en">ABOUT</h2>
+      <h2 class="title" data-aos="fade-up" data-aos-duration="1500">ABOUT</h2>
       <div class="about__wrapper">
         <div class="about__img">
           <!-- 본인 프로필 이미지로 변경 -->
@@ -81,30 +92,38 @@
         <div class="about__text">
           <!-- 본인 슬로건, 이름(생년월), 교육 사항 등 작성 -->
           <strong class="slogan font-en">Simple is Best</strong>
-          <h3 class="font-en">Kim Jae Hyun</h3>
+          <div>
+            <h3 class="font-en">Choi Ji Hown</h3>
+            <p>1986.04.25</p>
+          </div>
           <div>
             <h4 class="font-en">EDUCATION</h4>
             <ul>
-              <li>10.03 ~ 12.02 OO학교 OO과 졸업</li>
-              <li>23.12 ~ 24.05 풀스택 개발자 과정 수료</li>
+              <li>22.05 ~ 24.04 케이엘제이컴퍼니 퍼블리셔</li>
+              <li>24.05 ~ 24.12 풀스택 개발자 과정 수료</li>
             </ul>
           </div>
         </div>
       </div>
 
       <!-- 연락처 버튼 -->
-      <div class="about__btn font-en">
+      <!-- <div class="about__btn font-en">
         <a href="#contact">
           <img src="images/icon/icon_contact.png" alt="전화">CONTACT
         </a>
-      </div>
+      </div> -->
     </div>
+  </section>
+
+  <!-- 픽시드 배너 -->
+  <section class="banner">
+    <h2 class="title font-en" data-aos="fade-up" data-aos-duration="1500">SKILL</h2>
+    <div class="fixed-bg"></div>
   </section>
 
   <!-- SKILL -->
   <section id="skill" class="skill scroll-spy">
     <div class="inner">
-      <h2 class="title font-en">SKILL</h2>
       <ul class="skill__list">
         <!-- 스킬 추가하려면 li 요소 복사 붙여넣기 -->
         <li>
@@ -170,7 +189,7 @@
   <!-- WORK -->
   <section id="work" class="work font-en">
     <div class="inner">
-      <h2 class="title">WORK</h2>
+      <h2 class="title" data-aos="fade-up" data-aos-duration="1500">WORK</h2>
       <div class="port">
         <div class="port__img">
           <img src="images/work_1.jpg" alt="포트폴리오1">
@@ -214,7 +233,7 @@
   <!-- CONTACT -->
   <section id="contact" class="contact font-en scroll-spy">
     <div class="inner">
-      <h2 class="title">CONTACT</h2>
+      <h2 class="title" data-aos="fade-up" data-aos-duration="1500">CONTACT</h2>
       <div class="contact__info">
         <ul>
           <li><a href="https://github.com/geoblo">github.com/geoblo</a></li>
@@ -244,13 +263,19 @@
     <div class="inner">
       <p class="copyright">
         &copy; <span class="this-year"></span>
-        훈련생이름. <span class="font-en">All Rights Reserved.</span>
+        최지환. <span class="font-en">All Rights Reserved.</span>
       </p>
     </div>
   </footer>
 
   <!-- MODAL -->
   <div id="modal">
+    <div class="modal__inner">
+      <img src="images/work_4.jpg" alt="샘플">
+      <span class="material-symbols-outlined btn-close">close</span>
+    </div>
+  </div>
+  <div id="modal2">
     <div class="modal__inner">
       <img src="images/work_4.jpg" alt="샘플">
       <span class="material-symbols-outlined btn-close">close</span>
