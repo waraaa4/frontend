@@ -10,34 +10,34 @@ spyEls.forEach(function (spyEl) {
     triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
     triggerHook: 1 // 화면의 50% 지점에서 보여짐 여부 감시(0~1사이 지정)
   })
-  .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(new ScrollMagic.Controller());
+    .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+    .addTo(new ScrollMagic.Controller());
 });
 
 // 모달창 띄우기
-let modalEl = document.querySelector('#modal');
-let modalEl2 = document.querySelector('#modal2');
-let modalBtn = document.querySelectorAll('.port .btn-modal');
-let closeBtn = document.querySelector('#modal .btn-close');
-let closeBtn2 = document.querySelector('#modal2 .btn-close');
-console.log(modalBtn);
-console.log(modalBtn[0]);
-console.log(modalBtn[1]);
+// let modalEl = document.querySelector('#modal');
+// let modalEl2 = document.querySelector('#modal2');
+// let modalBtn = document.querySelectorAll('.port .btn-modal');
+// let closeBtn = document.querySelector('#modal .btn-close');
+// let closeBtn2 = document.querySelector('#modal2 .btn-close');
+// console.log(modalBtn);
+// console.log(modalBtn[0]);
+// console.log(modalBtn[1]);
 
-modalBtn[0].addEventListener('click', function () {
-  // console.log('클릭됨');
-  modalEl.style.display = 'flex';
-});
-modalBtn[1].addEventListener('click', function () {
-  // console.log('클릭됨');
-  modalEl2.style.display = 'flex';
-});
-closeBtn.addEventListener('click', function () {
-  modalEl.style.display = 'none';
-});
-closeBtn2.addEventListener('click', function () {
-  modalEl2.style.display = 'none';
-});
+// modalBtn[0].addEventListener('click', function () {
+//   // console.log('클릭됨');
+//   modalEl.style.display = 'flex';
+// });
+// modalBtn[1].addEventListener('click', function () {
+//   // console.log('클릭됨');
+//   modalEl2.style.display = 'flex';
+// });
+// closeBtn.addEventListener('click', function () {
+//   modalEl.style.display = 'none';
+// });
+// closeBtn2.addEventListener('click', function () {
+//   modalEl2.style.display = 'none';
+// });
 
 // 현재 연도 표시
 // 날짜 정보를 가진 JS의 Date 객체를 활용
@@ -71,3 +71,15 @@ window.addEventListener('scroll', function () {
     toTopBtn.style.transform = 'translateX(100px)';
   }
 });
+
+
+// 섹션3 슬라이드
+var swiper3 = new Swiper(".work-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 1.4,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+});
+// end

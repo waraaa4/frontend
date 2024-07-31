@@ -17,6 +17,13 @@
   -->
   <link rel="icon" href="./favicon.ico">
 
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <!-- reset.css -->
   <!-- 스타일 초기화: 브라우저 별로 다른 기본 스타일이 적용되는 것을 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
@@ -127,9 +134,9 @@
         <!-- 스킬 추가하려면 li 요소 복사 붙여넣기 -->
         <li>
           <div class="font-en">
-            <p>Java</p>
+            <img src="images/skill/java-img.png" alt="java 로고">
           </div>
-          <h3 class="font-en">Java<br>Programing</h3>
+          <h3 class="font-en">Java</h3>
           <ul>
             <li>객체지향</li>
             <li>람다식</li>
@@ -139,7 +146,7 @@
         </li>
         <li>
           <div class="font-en">
-            <p>Html</p>
+            <img src="images/skill/html-img.png" alt="html 로고">
           </div>
           <h3 class="font-en">HTML5</h3>
           <ul>
@@ -149,7 +156,7 @@
         </li>
         <li>
           <div class="font-en">
-            <p>Css</p>
+            <img src="images/skill/css-img.png" alt="css 로고">
           </div>
           <h3 class="font-en">CSS3</h3>
           <ul>
@@ -160,7 +167,7 @@
         </li>
         <li>
           <div class="font-en">
-            <p>Js</p>
+            <img src="images/skill/js-img.png" alt="js 로고">
           </div>
           <h3 class="font-en">JavaScript</h3>
           <ul>
@@ -171,7 +178,7 @@
         </li>
         <li>
           <div class="font-en">
-            <p>React</p>
+            <img src="images/skill/react-img.png" alt="react 로고">
           </div>
           <h3 class="font-en">React JS</h3>
           <ul>
@@ -189,7 +196,7 @@
   <section id="work" class="work font-en">
     <div class="inner">
       <h2 class="title" data-aos="fade-up" data-aos-duration="1500">WORK</h2>
-      <div class="port">
+      <!-- <div class="port">
         <div class="port__img">
           <img src="images/work_1.jpg" alt="포트폴리오1">
         </div>
@@ -225,7 +232,51 @@
             <a href="javascript:void(0)" class="btn btn--brown btn-modal">모달</a>
           </div>
         </div>
+      </div> -->
+
+      <div class="work-box">
+        <div class="swiper-container work-swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work/work-klj.png" alt="케이엘제이컴퍼니">
+                <div class="work-slide_text">
+                  <h3>케이엘제이컴퍼니</h3>
+                  <ul>
+                    <li>주요 기능 : 주요 기능 설명</li>
+                    <li>적용 기술 : HTML, CSS, JS</li>
+                    <li><a href="#" target="_blank">GitHub : 깃허브 주소</a></li>
+                    <li><a href="#" target="_blank">URL : 배포 주소</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work/work-rak.png" alt="락포슬린">
+                <div class="work-slide_text">
+                  <h3>락포슬린</h3>
+                  <ul>
+                    <li>주요 기능 : 주요 기능 설명</li>
+                    <li>적용 기술 : HTML, CSS, JS</li>
+                    <li><a href="#" target="_blank">GitHub : 깃허브 주소</a></li>
+                    <li><a href="#" target="_blank">URL : 배포 주소</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work/work-amt.png" alt="에이엠티">
+                <div class="work-slide_text">
+                  <h3>AMT코리아</h3>
+                  <ul>
+                    <li>주요 기능 : 주요 기능 설명</li>
+                    <li>적용 기술 : HTML, CSS, JS</li>
+                    <li><a href="#" target="_blank">GitHub : 깃허브 주소</a></li>
+                    <li><a href="#" target="_blank">URL : 배포 주소</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
       </div>
+      </div>
+
     </div>
   </section>
 
@@ -235,9 +286,9 @@
       <h2 class="title" data-aos="fade-up" data-aos-duration="1500">CONTACT</h2>
       <div class="contact__info">
         <ul>
-          <li><a href="https://github.com/geoblo">github.com/geoblo</a></li>
-          <li>010-1234-5678</li>
-          <li>geoblo@naver.com</li>
+          <li><a href="https://github.com/waraaa4">github.com/waraaa4</a></li>
+          <li>010-5020-2735</li>
+          <li>warcjh00@naver.com</li>
         </ul>
       </div>
       <!-- <div class="contact__sns">
