@@ -432,8 +432,35 @@ header nav ul li a:hover {
 .work-slide_text ul li {
   font-size: 14px;
 }
-
-
+/* 프론트/백엔드 이미지 박스 */
+.frontBack-box {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.frontBack-box .front-item,
+.frontBack-box .back-item {
+  width: 50%;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+.frontBack-box .front-item {
+  margin-right: 10px;
+}
+.frontBack-box .back-item {
+  margin-left: 10px;
+}
+.frontBack-box .front-item:hover,
+.frontBack-box .back-item:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.frontBack-box .front-item img,
+.frontBack-box .back-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 /* CONTACT */
 .contact {
